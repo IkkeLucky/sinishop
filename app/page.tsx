@@ -23,19 +23,19 @@ export default function ShoppingAppLanding() {
                   title: "Productos Internacionales",
                   description:
                     "Les ofrecemos productos de calidad desde todas partes del mundo, directamente hasta la puerta de tu casa.",
-                  image: "/placeholder.svg?height=200&width=200",
+                  image: "/images/international.jpg?height=200&width=200",
                 },
                 {
                   title: "Precios Competitivos",
                   description:
                     "Importadores directos de los productos que buscas, tanto en stock como a pedido, a los mejores precios.",
-                  image: "/placeholder.svg?height=200&width=200",
+                  image: "/images/sale.jpg?height=200&width=200",
                 },
                 {
                   title: "Compras Simples",
                   description:
                     "Envios internacionales directos a la puerta de tu casa, cualquier tipo de envio a coordinar.",
-                  image: "/placeholder.svg?height=200&width=200",
+                  image: "/images/easyshop.jpg?height=200&width=200",
                 },
               ].map((item, index) => (
                 <div
@@ -47,7 +47,7 @@ export default function ShoppingAppLanding() {
                     alt={item.title}
                     width={200}
                     height={200}
-                    className="mb-4 rounded-full"
+                    className="mb-4 rounded-full w-60 h-60"
                   />
                   <h3 className="text-xl font-semibold mb-2 text-neutral-800 dark:text-neutral-100">{item.title}</h3>
                   <p className="text-neutral-600 dark:text-neutral-300">{item.description}</p>
@@ -64,7 +64,7 @@ export default function ShoppingAppLanding() {
           </div>
           <div className="relative flex justify-center">
             <span className="bg-white dark:bg-neutral-950 px-3 text-lg font-semibold text-gray-900 dark:text-gray-100">
-              Destacados
+              Como funciona
             </span>
           </div>
         </div>
@@ -75,16 +75,16 @@ export default function ShoppingAppLanding() {
             <div className="space-y-6">
               {[
                 {
-                  title: "Ofertas Especiales",
+                  title: "Productos en stock",
                   description:
-                    "Descubre nuestras ofertas exclusivas en productos internacionales. Ahorra en tus compras favoritas con descuentos increíbles.",
-                  image: "/placeholder.svg?height=300&width=400",
+                    "Si tenemos ciertos productos en stock, se van a encontrar dentro de la pagina, marcado con el estado stock y disponible para adquirir en el momento, con una demora de un par de dias hasta una o maximo dos semanas.",
+                  image: "/images/instock.jpg",
                 },
                 {
-                  title: "Nuevos Lanzamientos",
+                  title: "Productos a pedido, o pendiente a aprobacion",
                   description:
-                    "Sé el primero en obtener los últimos productos del mercado internacional. Mantente a la vanguardia con nuestros nuevos lanzamientos.",
-                  image: "/placeholder.svg?height=300&width=400",
+                    "Si quieres un producto a pedido puedes rellenar las casillas debajo, estos productos estaran pendiente a aprobacion y cuando sean aprobados podras ver en la pagina el estado del producto, al inicio aparecera con el estado pendiente de aprobacion en amarillo, y luego al ser aprobado se vera como aprobado con color verde. Generalmente productos a aprobar llegan con un poco mas de demora.",
+                  image: "/images/underreview.jpg",
                 },
               ].map((item, index) => (
                 <div
@@ -103,7 +103,62 @@ export default function ShoppingAppLanding() {
                   <div className="md:w-2/3 p-6 flex flex-col justify-center">
                     <h3 className="text-xl font-bold mb-2 text-neutral-800 dark:text-neutral-100">{item.title}</h3>
                     <p className="text-neutral-600 dark:text-neutral-300 mb-4">{item.description}</p>
-                    <Button className="self-start">Explorar más</Button>
+                    
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+
+        {/* Divider */}
+        <div className="relative py-16">
+          <div className="absolute inset-0 flex items-center" aria-hidden="true">
+            <div className="w-full border-t border-gray-300 dark:border-gray-700"></div>
+          </div>
+          <div className="relative flex justify-center">
+            <span className="bg-white dark:bg-neutral-950 px-3 text-lg font-semibold text-gray-900 dark:text-gray-100">
+              Diferentes metodos de pago
+            </span>
+          </div>
+        </div>
+
+        {/* Horizontal Cards Section */}
+        <section className="relative z-10 py-8 bg-transparent">
+          <div className="container mx-auto px-4">
+            <div className="space-y-6">
+              {[
+                {
+                  title: "Pago en pesos, productos en stock",
+                  description:
+                    "Al inicio de SiniShop los pagos de productos en stock se pueden realizar en pesos, los pendientes de aprobacion que sean luego aprobados pueden tambien ser en pesos al llegar el pedido dentro de las semanas siguientes",
+                  image: "/images/pesos.jpg",
+                },
+                {
+                  title: "Pago en dolares, para acelerar la aprobacion de producto",
+                  description:
+                    "Dentro del estado del producto se podra pagar en dolares, de esta forma permitiendo al producto en espera, pasar a ser aprobado en el mismo dia o dos dias laborales.",
+                  image: "/images/dolares.jpg",
+                },
+              ].map((item, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col md:flex-row bg-white dark:bg-neutral-800 rounded-lg shadow-lg overflow-hidden"
+                >
+                  <div className="md:w-1/3 h-48 md:h-auto">
+                    <Image
+                      src={item.image || "/placeholder.svg"}
+                      alt={item.title}
+                      width={400}
+                      height={300}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="md:w-2/3 p-6 flex flex-col justify-center">
+                    <h3 className="text-xl font-bold mb-2 text-neutral-800 dark:text-neutral-100">{item.title}</h3>
+                    <p className="text-neutral-600 dark:text-neutral-300 mb-4">{item.description}</p>
+                    
                   </div>
                 </div>
               ))}

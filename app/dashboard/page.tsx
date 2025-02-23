@@ -13,7 +13,7 @@ const cards = [
     id: 1,
     title: "Adidas Barricade",
     type: "Ropa",
-    price: "90000 ARS",
+    price: "90.000 ARS",
     images: [
       "/images/adidasbarricade.avif",
       "/images/adidasbarricade2.avif",
@@ -25,7 +25,7 @@ const cards = [
     id: 2,
     title: "Asics Gel Windhawk 4",
     type: "Ropa",
-    price: "120000 ARS",
+    price: "120.000 ARS",
     images: [
       "/images/asicsgelwindhawk.avif",
       "/images/asicsgelwindhawk2.avif",
@@ -37,7 +37,7 @@ const cards = [
     id: 3,
     title: "Adidas Galaxy",
     type: "Ropa",
-    price: "100000 ARS",
+    price: "100.000 ARS",
     images: [
       "/images/adidasgalaxy7.avif",
       "/images/adidasgalaxy7b.avif",
@@ -48,7 +48,7 @@ const cards = [
     id: 4,
     title: "Adidas Duramo SL",
     type: "Ropa",
-    price: "90000 ARS",
+    price: "90.000 ARS",
     images: [
       "/images/duramosl.avif",
       "/images/duramosl2.avif",
@@ -60,7 +60,7 @@ const cards = [
     id: 5,
     title: "Timberland Roxie Lane",
     type: "Ropa",
-    price: "160000 ARS",
+    price: "160.000 ARS",
     images: [
       "/images/roxielane.avif",
       "/images/roxielane2.avif",
@@ -72,7 +72,7 @@ const cards = [
     id: 6,
     title: "Timberland Windsor Park",
     type: "Ropa",
-    price: "120000 ARS",
+    price: "120.000 ARS",
     images: [
       "/images/winsorparkmid.avif",
       "/images/winsorparkmid2.avif",
@@ -84,7 +84,7 @@ const cards = [
     id: 7,
     title: "Airpods 4",
     type: "Electronica",
-    price: "300000 ARS",
+    price: "300.000 ARS",
     images: [
       "/images/airpods4.webp",
       "/images/airpods4b.webp",
@@ -94,7 +94,7 @@ const cards = [
     id: 8,
     title: "JBL Tune Flex",
     type: "Electronica",
-    price: "70000 ARS",
+    price: "70.000 ARS",
     images: [
       "/images/jbltuneflex.webp",
       "/images/jbltuneflex2.webp",
