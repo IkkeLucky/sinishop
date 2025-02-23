@@ -11,92 +11,103 @@ import Image from "next/image"
 const cards = [
   {
     id: 1,
-    title: "Product 1",
-    type: "Electronics",
+    title: "Adidas Barricade",
+    type: "Ropa",
+    price: "90000 ARS",
     images: [
-      "/placeholder.svg?height=300&width=300&text=Product+1+Image+1",
-      "/placeholder.svg?height=300&width=300&text=Product+1+Image+2",
-      "/placeholder.svg?height=300&width=300&text=Product+1+Image+3",
+      "/images/adidasbarricade.avif",
+      "/images/adidasbarricade2.avif",
+      "/images/adidasbarricade3.avif",
+      "/images/adidasbarricade4.avif",
     ],
   },
   {
     id: 2,
-    title: "Product 2",
-    type: "Clothing",
+    title: "Asics Gel Windhawk 4",
+    type: "Ropa",
+    price: "120000 ARS",
     images: [
-      "/placeholder.svg?height=300&width=300&text=Product+2+Image+1",
-      "/placeholder.svg?height=300&width=300&text=Product+2+Image+2",
-      "/placeholder.svg?height=300&width=300&text=Product+2+Image+3",
+      "/images/asicsgelwindhawk.avif",
+      "/images/asicsgelwindhawk2.avif",
+      "/images/asicsgelwindhawk3.avif",
+      "/images/asicsgelwindhawk4.avif",
     ],
   },
   {
     id: 3,
-    title: "Product 3",
-    type: "Home & Garden",
+    title: "Adidas Galaxy",
+    type: "Ropa",
+    price: "100000 ARS",
     images: [
-      "/placeholder.svg?height=300&width=300&text=Product+3+Image+1",
-      "/placeholder.svg?height=300&width=300&text=Product+3+Image+2",
-      "/placeholder.svg?height=300&width=300&text=Product+3+Image+3",
+      "/images/adidasgalaxy7.avif",
+      "/images/adidasgalaxy7b.avif",
+      "/images/adidasgalaxy7c.avif",
     ],
   },
   {
     id: 4,
-    title: "Product 4",
-    type: "Electronics",
+    title: "Adidas Duramo SL",
+    type: "Ropa",
+    price: "90000 ARS",
     images: [
-      "/placeholder.svg?height=300&width=300&text=Product+4+Image+1",
-      "/placeholder.svg?height=300&width=300&text=Product+4+Image+2",
-      "/placeholder.svg?height=300&width=300&text=Product+4+Image+3",
+      "/images/duramosl.avif",
+      "/images/duramosl2.avif",
+      "/images/duramosl3.avif",
+      "/images/duramosl4.avif",
     ],
   },
   {
     id: 5,
-    title: "Product 5",
-    type: "Clothing",
+    title: "Timberland Roxie Lane",
+    type: "Ropa",
+    price: "160000 ARS",
     images: [
-      "/placeholder.svg?height=300&width=300&text=Product+5+Image+1",
-      "/placeholder.svg?height=300&width=300&text=Product+5+Image+2",
-      "/placeholder.svg?height=300&width=300&text=Product+5+Image+3",
+      "/images/roxielane.avif",
+      "/images/roxielane2.avif",
+      "/images/roxielane3.avif",
+      "/images/roxielane4.avif",
     ],
   },
   {
     id: 6,
-    title: "Product 6",
-    type: "Home & Garden",
+    title: "Timberland Windsor Park",
+    type: "Ropa",
+    price: "120000 ARS",
     images: [
-      "/placeholder.svg?height=300&width=300&text=Product+6+Image+1",
-      "/placeholder.svg?height=300&width=300&text=Product+6+Image+2",
-      "/placeholder.svg?height=300&width=300&text=Product+6+Image+3",
+      "/images/winsorparkmid.avif",
+      "/images/winsorparkmid2.avif",
+      "/images/winsorparkmid3.avif",
+      "/images/winsorparkmid4.avif",
     ],
   },
   {
     id: 7,
-    title: "Product 7",
-    type: "Electronics",
+    title: "Airpods 4",
+    type: "Electronica",
+    price: "300000 ARS",
     images: [
-      "/placeholder.svg?height=300&width=300&text=Product+7+Image+1",
-      "/placeholder.svg?height=300&width=300&text=Product+7+Image+2",
-      "/placeholder.svg?height=300&width=300&text=Product+7+Image+3",
+      "/images/airpods4.webp",
+      "/images/airpods4b.webp",
     ],
   },
   {
     id: 8,
-    title: "Product 8",
-    type: "Clothing",
+    title: "JBL Tune Flex",
+    type: "Electronica",
+    price: "70000 ARS",
     images: [
-      "/placeholder.svg?height=300&width=300&text=Product+8+Image+1",
-      "/placeholder.svg?height=300&width=300&text=Product+8+Image+2",
-      "/placeholder.svg?height=300&width=300&text=Product+8+Image+3",
+      "/images/jbltuneflex.webp",
+      "/images/jbltuneflex2.webp",
+      "/images/jbltuneflex3.webp",
     ],
   },
   {
     id: 9,
-    title: "Product 9",
-    type: "Home & Garden",
+    title: "Nintendo Switch OLED",
+    type: "Electronica",
+    price: "550.000 ARS",
     images: [
-      "/placeholder.svg?height=300&width=300&text=Product+9+Image+1",
-      "/placeholder.svg?height=300&width=300&text=Product+9+Image+2",
-      "/placeholder.svg?height=300&width=300&text=Product+9+Image+3",
+      "/images/switcholed.webp",
     ],
   },
 ]
@@ -141,6 +152,7 @@ function ProductCard({ card }: { card: (typeof cards)[0] }) {
       <div className="p-4">
         <h3 className="font-semibold text-lg mb-2">{card.title}</h3>
         <p className="text-sm text-gray-600">Category: {card.type}</p>
+        <h3 className="font-semibold text-lg mb-2 mt-2">Precio: {card.price}</h3>
       </div>
     </div>
   )
@@ -237,8 +249,8 @@ export default function Dashboard() {
               <h2 className="text-xs font-semibold text-gray-500 mb-2">CATEGORIES</h2>
               <ul className="space-y-1">
                 {[
-                  { name: "Electronics", icon: Box },
-                  { name: "Clothing", icon: ShirtIcon },
+                  { name: "Electronica", icon: Box },
+                  { name: "Ropa", icon: ShirtIcon },
                   { name: "Home & Garden", icon: Home },
                   { name: "Deals", icon: Tag },
                 ].map((item, index) => (
